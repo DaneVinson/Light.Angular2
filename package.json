@@ -1,6 +1,6 @@
 {
-  "name": "angular2-tour-of-heroes",
-  "version": "0.0.1",
+  "name": "Light.Angular2",
+  "version": "0.4.0",
   "scripts": {
     "tsc": "tsc",
     "tsc:w": "tsc -w",
