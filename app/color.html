@@ -1,0 +1,16 @@
+<h2>{{title}}</h2>
+<form>
+    <div class="row">
+        <div class="form-group col-xs-4">
+            <label for="wavelengthValue">Wavelength (nm)</label>
+            <input [(ngModel)]="wavelength" [style.background-color]="colorRgba" id="wavelengthValue" type="text" class="form-control" placeholder="visible light from 380 nm violet to 780 nm red">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <button class="btn btn-danger" (click)="setWavelength(630)">Red</button>
+            <button class="btn btn-success" (click)="setWavelength(520)">Green</button>
+            <button class="btn btn-primary" (click)="setWavelength(460)">Blue</button>
+        </div>
+    </div>
+</form>
