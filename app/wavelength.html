@@ -6,15 +6,9 @@
             <input [(ngModel)]="wavelength" id="wavelengthValue" type="text" class="form-control" placeholder="visible light from 380 nm violet to 780 nm red">
         </div>
     </div>
-    <div class="row">
-        <div class="col-lg-12">
-            <button class="btn btn-danger" (click)="setWavelength(630)">Red</button>
-            <button class="btn btn-success" (click)="setWavelength(520)">Green</button>
-            <button class="btn btn-primary" (click)="setWavelength(460)">Blue</button>
-        </div>
-    </div>
+    <light-buttons [wavelengthObject]="vm"></light-buttons>
     <br/>
     <div class="row">
-        <img src="sin.png"  [width]="signalWidth" height="200">
+        <img src="sin.png" [width]="signalWidth" height="200">
     </div>
 </form>

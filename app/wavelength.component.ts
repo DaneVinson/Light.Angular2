@@ -1,13 +1,19 @@
 import {Component} from 'angular2/core';
+import {ButtonsComponent} from './buttons.component';
 
 @Component({
-  selector: 'light-wavelength',
-  templateUrl: 'app/wavelength.html'
+    directives: [ButtonsComponent],
+    selector: 'light-wavelength',
+    templateUrl: 'app/wavelength.html'
 })
-export class WavelengthComponent {
+export class WavelengthComponent implements IWavelength {
     public title = 'Wavelength of Light';
+    public vm = this;
     public wavelength: number = null;
     
+    getWavelength(){
+        return this.wavelength;
+    }
     setWavelength(wavelength: number) {
         this.wavelength = wavelength;
     }
